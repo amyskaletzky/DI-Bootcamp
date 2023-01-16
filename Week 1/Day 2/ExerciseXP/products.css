@@ -4,6 +4,29 @@
     padding: 0;
 }
 
+body {
+    background-color: #A49694;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    height: 60px;
+    position: relative;
+}
+
+i {
+    margin: 10px 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 17px;
+    right: 40px;
+}
 
 section {
     text-align: justify;
@@ -28,6 +51,7 @@ div:not(:first-child) {
 img {
     width: 250px;
     height: auto;
+    border: 1px solid #827977;
 }
 
 h4 {
@@ -65,21 +89,21 @@ div p:first-of-type {
 
 .price {
     font-size: 18px;
-    color: #298d74;
+    color: #007615;
 }
 
 .price-before {
     text-decoration: line-through;
-    color: grey;
+    color: #4B4237;
     font-size: small;
     margin-left: 5px;
 }
 
 button {
     padding: 10px;
-    background-color: white;
-    border: 2px solid #ececec;
-    color: #888a8b;
+    background-color: #c0b1ae;
+    border: 2px solid #554b3f;
+    color: #4B4237;
     font-weight: bold;
 }
 
