@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.senses {
+    margin-left: 3.125em;
+}
+
+.senses h3 {
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+.center {
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 500px;
+    border: 10px solid orangered;
+    margin: auto;
+}
+
+table {
+    margin: auto;
+}
+
+.topTh {
+    border: 1px solid red;
+    color: red;
+}
+
+#hideThis {
+    visibility: hidden;
+}
+
+th,
+td,
+tr {
+    border: 1px solid;
+}
+
+td {
+    padding: 15px;
+}
+
+.lion {
+    margin-top: 5em;
+}

@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header-section {
+    background-color: black;
+    color: white;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mjolnir {
+    height: auto;
+    width: 5%;
+    margin: 10px;
+}
+
+nav ul {
+    margin: 25px 20px 25px 5px;
+}
+
+nav a {
+    padding: 5px 80px 25px 5px;
+    font-size: 30px;
+    color: #7415d7;
+}
+
+a:hover {
+    cursor: pointer;
+    color: white;
+}
+
+
+.main-section {
+    background: url('image/thor.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.thor-name {
+    font-size: 100px;
+    margin: 40px 20px 0 20px;
+    font-family: 'Rubik Mono One', sans-serif;
+
+}
+
+.main-text {
+    margin: 40px 20px;
+    font-size: 20px;
+    width: 50%;
+}
+
+footer {
+    background-color: black;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}

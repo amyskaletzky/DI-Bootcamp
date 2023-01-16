@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    border: 2px solid salmon;
+    background-color: black;
+    color: white;
+}
+
+nav a {
+    display: inline-block;
+    
+}
