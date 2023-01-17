@@ -17,7 +17,6 @@ h1 {
 .left-section {
     background-color: #fafafa;
     flex: 1;
-    border: 2px solid red;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -54,6 +53,11 @@ input {
 
 .checkbox input {
     width: 20px;
+}
+
+.checkbox a {
+    text-decoration: none;
+    color: #242131;
 }
 
 #submit {
