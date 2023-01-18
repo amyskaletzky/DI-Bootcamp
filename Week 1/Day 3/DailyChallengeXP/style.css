@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+}
+
+div {
+    background-color: yellow;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
