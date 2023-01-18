@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: fit-content;
+}
+
+div {
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    /* margin: 5px; */
+}
+
+.light-grey {
+    background-color: #cccccc;
+
+}
+
+.grey {
+    background-color: #999;
+}
+
+.dark-grey {
+    background-color: #666;
+}
+
+.black {
+    background-color: black;
+}
