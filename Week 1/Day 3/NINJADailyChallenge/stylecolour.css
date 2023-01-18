@@ -16,19 +16,14 @@ div {
     border: 2px solid white;
 }
 
-.light-grey {
-    background-color: #cccccc;
-
+.orange {
+    background-color: #ff7100;
 }
 
-.grey {
-    background-color: #999;
+.light-orange {
+    background-color: #ffb26d;
 }
 
-.dark-grey {
-    background-color: #666;
-}
-
-.black {
-    background-color: black;
+.brown {
+    background-color: #a84a00;
 }

@@ -13,22 +13,16 @@ section {
 div {
     height: 50px;
     width: 50px;
-    border: 2px solid white;
 }
 
-.light-grey {
-    background-color: #cccccc;
-
+.white {
+    background: white;
 }
 
-.grey {
-    background-color: #999;
+.light-red {
+    background-color: #e67f7e;
 }
 
-.dark-grey {
-    background-color: #666;
-}
-
-.black {
-    background-color: black;
+.red {
+    background-color: #d83e3b;
 }
