@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="d-flex flex-column">
+
+        <nav class="d-flex  navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+
+                <a class="ms-4 navbar-brand" href="#">Project Exercise #9</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <nav class="p-2 flex-grow-1 navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                            data-bs-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav">
+                                <a href="#" class="nav-item nav-link">Home</a>
+                                <a href="#" class="nav-item nav-link active bg-dark">About</a>
+                                <a href="#" class="nav-item nav-link">Contact <span
+                                        class="badge rounded-pill bg-secondary">3</span></a>
+                                <!-- Make sure to change shape to circle-->
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dropdown</a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">Inbox</a>
+                                        <a href="#" class="dropdown-item">Sent</a>
+                                        <a href="#" class="dropdown-item">Drafts</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="row align-self-end">
+                        <div class="col-4">
+                            <input type="text" class="m-1 form-control" placeholder="Email">
+                        </div>
+                        <div class="col-4">
+                            <input type="text" class="m-1 form-control" placeholder="Password">
+
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="m-1 btn btn-success">Sign in</button>
+
+                        </div>
+                    </form>
+            </div>
+        </nav>
+        </nav>
+
+        <!-- Jumbotron -->
+        <div class="p-5 bg-light">
+            <div class="container">
+
+                <h1 class="mb-3 display-1 fw-bold">Hello, world!</h1>
+                <h4 class="mb-3">This is exercise #9. It includes a large callout called a Jumbotron and three
+                    supporting
+                    pieces
+                    of content.</h4>
+                <a class="btn btn-primary" href="" role="button">Learn more</a>
+            </div>
+        </div>
+        <!-- Jumbotron -->
+
+        <!-- Columns -->
+        <div class="d-grid container">
+
+            <div class="row row-cols-3">
+                <div class="col-4 p-3">
+                    <h3>Heading</h3>
+
+                </div>
+
+                <div class="col-4 p-3">
+                    <h3>Heading</h3>
+
+                </div>
+
+                <div class="col-4 p-3">
+                    <h3>Heading<span class="badge ms-2 bg-primary">New</span></h3>
+
+                </div>
+
+                <div class="col-4">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis delectus ad officiis et.
+                        Voluptas harum ad mollitia enim deserunt vel odit aperiam recusandae accusamus ducimus esse
+                        optio repellat minus quo, labore tempore delectus unde ipsa dignissimos dolorem iusto eveniet
+                        voluptatum.</p>
+                </div>
+                <div class="col-4">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis delectus ad officiis et.
+                        Voluptas harum ad mollitia enim deserunt vel odit aperiam recusandae accusamus ducimus esse
+                        optio repellat minus quo, labore tempore delectus unde ipsa dignissimos dolorem iusto eveniet
+                        voluptatum.</p>
+                </div>
+                <div class="col-4">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis delectus ad officiis et.
+                        Voluptas harum ad mollitia enim deserunt vel odit aperiam recusandae accusamus ducimus esse
+                        optio repellat minus quo, labore tempore delectus unde ipsa dignissimos dolorem iusto eveniet
+                        voluptatum.</p>
+                </div>
+
+                <div class="col-4">
+                    <button type="button" class="btn btn-light border border-secondary"><i
+                            class="fa-solid me-2 fa-chart-simple"></i>View
+                        Details</button>
+                </div>
+                <div class="col-4">
+                    <button type="button" class="btn btn-light border border-secondary"><i
+                            class="fa-solid me-2 fa-mobile-screen-button"></i>View Details</button>
+                </div>
+                <div class="col-4">
+                    <button type="button" class="btn btn-light border border-secondary"><i
+                            class="fa-solid me-2 fa-location-dot"></i>View Details</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
