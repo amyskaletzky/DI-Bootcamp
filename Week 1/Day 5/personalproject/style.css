@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    /* background-color: #1d1d1d; */
+    font-family: 'Unbounded',
+        cursive;
+}
+
+
+/* section */
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-section {
+    background: url('img/bg-img.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+
+/* Navbar */
+
+nav {
+    /* background-color: black; */
+    height: 10%;
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul a {
+    font-size: 1.5625em;
+
+}
+
+.skills {
+    color: #81ffab;
+}
+
+.skills:hover {
+    color: #b895ec;
+    text-shadow: 0 0 0.125em #FFF, 0 0 0.3125em #FFF, 0 0 0.3125em #FFF, 0 0 0.625em #81ffab, 0 0 1.875em #81ffab, 0 0 2.5em #81ffab, 0 0 3.4375em #81ffab, 0 0 4.6875em #81ffab, 0.125em 0.125em 0.125em rgba(129, 255, 171, 0);
+}
+
+.projs {
+    color: #fe8bf0;
+
+}
+
+.projs:hover {
+    color: #b895ec;
+    text-shadow: 0 0 0.125em #FFF, 0 0 0.3125em #FFF, 0 0 0.3125em #FFF, 0 0 0.625em #fe8bf0, 0 0 1.875em #fe8bf0, 0 0 2.5em #fe8bf0, 0 0 3.4375em #fe8bf0, 0 0 4.6875em #fe8bf0, 0.125em 0.125em 0.125em rgba(129, 255, 171, 0);
+}
+
+.about-me {
+    color: #b895ec;
+    /* color: #81ffab; */
+
+}
+
+/* #pink {
+    color: #ccc0be;
+
+} */
+
+
+.about-me:hover,
+.about-me span:hover {
+    color: #fe8bf0;
+    text-shadow: 0 0 0.125em #FFF, 0 0 0.625em #FFF, 0 0 0.625em #FFF, 0 0 0.625em #b895ec, 0 0 1.875em #b895ec, 0 0 2.5em #b895ec, 0 0 3.4375em #b895ec, 0 0 4.6875em #b895ec, 0.125em 0.125em 0.125em rgba(129, 255, 171, 0);
+}
+
+ul a:hover {
+    cursor: pointer;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+/* Main Content */
+.intro {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin-left: 3.125em;
+    height: 100%;
+}
+
+.intro h1 {
+    font-size: 5em;
+    color: white;
+}
+
+/* Second Section (About Me) */
+.second-section {
+    height: 100vh;
+    background: rgb(238, 226, 112);
+    background: linear-gradient(299deg, rgba(238, 226, 112, 1) 0%, rgba(255, 184, 176, 1) 100%);
+    background: rgb(238, 226, 112);
+    background: linear-gradient(135deg, rgba(238, 226, 112, 1) 0%, rgba(255, 184, 176, 1) 100%);
+}
+
+.navbar-space {
+    height: 10%;
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-section h1 {
+    color: white;
+    font-size: 3em;
+    padding: 1.5em;
+}
