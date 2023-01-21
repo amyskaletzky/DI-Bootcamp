@@ -94,7 +94,6 @@ a:active {
 
 /* Main Content */
 .intro {
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,9 +110,6 @@ a:active {
 /* Contact Form */
 
 .contact-button {
-    /* background-color: white; */
-    /* display: inline-block; */
-    border: 2px solid salmon;
     text-align: center;
 }
 
@@ -137,24 +133,78 @@ i:hover {
 
 /* Second Section (About Me) */
 .second-section {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     background: rgb(238, 226, 112);
-    background: linear-gradient(299deg, rgba(238, 226, 112, 1) 0%, rgba(255, 184, 176, 1) 100%);
-    background: rgb(238, 226, 112);
     background: linear-gradient(135deg, rgba(238, 226, 112, 1) 0%, rgba(255, 184, 176, 1) 100%);
+}
+
+
+.navbar-space {
+    height: 10%;
+    /* grid-column: 1 / span 2;
+    grid-row: 1 / span 2; */
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.second-section h1 {
+    /* grid-column: 1 /; */
+    color: #382626;
+    font-size: 3em;
+    padding: 1.5em 1.5em 0.7em 1.5em;
+}
+
+.second-section p {
+    margin-left: 4.5em;
+}
+
+.second-section img {
+    border-radius: 0px 0px 0px 50px;
+
+    /* margin-bottom: 20px; */
+}
+
+.text {
+    /* position: absolute; */
+    top: 30%;
+    left: 4%;
+    padding: 1.5em;
+}
+
+/* My Projects Section */
+
+.third-section {
+    height: 100vh;
+    background: rgb(186, 148, 236);
+    background: linear-gradient(135deg, rgba(186, 148, 236, 1) 0%, rgba(212, 156, 225, 1) 50%, rgba(238, 163, 213, 1) 100%);
 }
 
 .navbar-space {
     height: 10%;
 }
 
-#about {
-    display: flex;
-    justify-content: space-between;
+.proj {
+    background-color: #620E3E;
+    background: rgb(181, 160, 229);
+    background: linear-gradient(86deg, rgba(181, 160, 229, 1) 0%, rgba(137, 246, 174, 1) 100%);
+    /* background: rgb(181, 160, 229);
+    background: linear-gradient(86deg, rgba(181, 160, 229, 1) 0%, rgba(176, 174, 221, 1) 50%, rgba(164, 201, 204, 1) 100%); */
 }
 
-.second-section h1 {
-    color: white;
+#projects {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#projects h1 {
+    /* border: 2px solid salmon; */
     font-size: 3em;
-    padding: 1.5em;
+    padding: 0.5em 1.5em;
+    color: white;
 }
