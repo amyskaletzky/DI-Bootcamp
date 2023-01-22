@@ -28,7 +28,7 @@ console.log(`I eat ${faveFood} at every ${faveMeal}`)
 //    For example: I watched 3 series: black mirror, money heist, and the big bang theory
 
 const myWatchedSeries = ['black mirror', 'money heist', 'the big bang theory']
-let myWatchedSeriesLength = 3
+let myWatchedSeriesLength = myWatchedSeries.length
 let myWatchedSeriesSentence = myWatchedSeries.join(', ')
 
 let sentence = `I watched ${myWatchedSeriesLength} series : ${myWatchedSeriesSentence}`
