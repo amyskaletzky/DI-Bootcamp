@@ -51,3 +51,20 @@ if (grade > 90) {
 } else {
     console.log('D');
 }
+
+// Exercise 3 : Verbing
+// Instructions:
+// Prompt the user for a string.It must be a verb.
+// If the length of the string is at least 3 and the string doesn’t end with “ing”, add ‘ing’ to the end of the string.
+// If the length of the string is at least 3 and the string ends with “ing” add “ly” to it’s end.
+// If the length of the string is less than 3, leave it unchanged.
+
+let verb = prompt('Please enter a verb')
+let ending = verb.slice(-3)
+
+if (verb.length >= 3 && ending !== 'ing') {
+    verb = verb + 'ing'
+} else if (verb.length >= 3 && ending === 'ing') {
+    verb = verb + 'ly'
+}
+console.log(verb);
