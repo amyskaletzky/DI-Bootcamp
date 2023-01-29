@@ -33,17 +33,12 @@ function compareNumbers(userNumber, computerNumber) {
 
         } else if (userNumber > computerNumber) {
             alert('Your number is bigger than the computer\'s')
-            if (i === 2) {
-                alert('out of chances')                     // want to find a way not to repeat this code
-                return
-            }
+            if (endGame(i)) return
             userNumber = +prompt('Enter a new number')
+
         } else if (userNumber < computerNumber) {
             alert('Your number is smaller than the computer\'s')
-            if (i === 2) {
-                alert('out of chances')
-                return
-            }
+            if (endGame(i)) return
             userNumber = +prompt('Enter a new number')
         }
     }
@@ -51,9 +46,11 @@ function compareNumbers(userNumber, computerNumber) {
 
 }
 
-// function endGame(index) {
-//     if (index === 2) {
-//         alert('out of chances')
-//         return
-//     }
-// }
+function endGame(index) {
+    if (index === 2) {
+        alert('out of chances')
+        return true
+    } else {
+        return false
+    }
+}
