@@ -5,8 +5,8 @@
 // author,
 // image : a url,
 // alreadyRead : which is a boolean(true or false).
-
 // Initiate the array with 2 books of your choice(ie.Add manually 2 books objects in the array)
+
 const allBooks = []
 
 const book1 = {
