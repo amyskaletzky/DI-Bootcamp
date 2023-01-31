@@ -19,7 +19,8 @@ input.setAttribute('id', 'txt')
 input.setAttribute('name', 'txt')
 form.appendChild(input)
 
-input.addEventListener('keyup', checkOnlyLetters)
+//funny but instead of "keyup" change it to "input"
+input.addEventListener('input', checkOnlyLetters)
 
 function checkOnlyLetters(evt) {
     console.log(evt);
