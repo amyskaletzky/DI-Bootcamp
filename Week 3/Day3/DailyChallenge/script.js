@@ -19,7 +19,7 @@ input.setAttribute('id', 'txt')
 input.setAttribute('name', 'txt')
 form.appendChild(input)
 
-input.addEventListener('keyup', checkOnlyLetters)
+input.addEventListener('input', checkOnlyLetters)
 
 function checkOnlyLetters(evt) {
     console.log(evt);
@@ -28,21 +28,10 @@ function checkOnlyLetters(evt) {
     let inputVal = input.value
     console.log(!inputVal.match(letters));
     if (!inputVal.match(letters)) {
-        var res = inputVal.replace(/\d.*\d/, "");
+        var res = inputVal.replace(/[^a-zA-Z ]/g, "");
         console.log(res);
     }
 
 }
 
-
-// const str = 'mi5lk an3d45 @#$%&!br3ead';
-
-// const noSpecialChars = str.replace(/[^a-zA-Z ]/g, '');
-
-// console.log(noSpecialChars);
-
-// const str = 'mi5lk an3d45 @#$%&!br3ead';
-// const letter = /^[A-Za-z]+$/;
-// const noSpecialChars = str.replace(/[^a-zA-Z ]/g, '');
-
-// console.log(noSpecialChars);
+// var res = inputVal.replace(/\d.*\d/, "");   
