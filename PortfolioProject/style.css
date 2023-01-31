@@ -96,7 +96,7 @@ a:active {
     text-decoration: none;
 }
 
-/* Main Content */
+/* Main Content First Page */
 .intro {
     display: flex;
     flex-direction: column;
@@ -208,4 +208,12 @@ i:hover {
     font-size: 3em;
     padding: 0.5em 1.5em;
     color: white;
+}
+
+/* My Skills Section */
+
+.fourth-section {
+    height: 100vh;
+    background: #adc6c8;
+    /* background: linear-gradient(135deg, rgba(186, 148, 236, 1) 0%, rgba(212, 156, 225, 1) 50%, rgba(238, 163, 213, 1) 100%); */
 }
