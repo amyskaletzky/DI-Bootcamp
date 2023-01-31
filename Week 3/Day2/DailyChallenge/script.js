@@ -8,11 +8,12 @@
 
 
 const form = document.forms[0]
-const noun = document.getElementById('noun')
-const adj = document.getElementById('adjective')
-const person = document.getElementById('person')
-const verb = document.getElementById('verb')
-const place = document.getElementById('place')
+// const noun = document.getElementById('noun')
+// const adj = document.getElementById('adjective')
+// const person = document.getElementById('person')
+// const verb = document.getElementById('verb')
+// const place = document.getElementById('place')
+const inputs = document.querySelectorAll('input')
 const span = document.querySelector('#story')
 
 
@@ -21,7 +22,16 @@ form.addEventListener('submit', createStory)
 
 function createStory(evt) {
     evt.preventDefault()
-    if (!adj.value, !verb.value, !person.value, !noun.value, !place.value) return
-    let sentence = `${adj.value} ${person.value} ${verb.value} ${noun.value} ${place.value}`
+    let arr = []
+
+    for (let input of inputs) {
+        if (!input.value) {
+            arr.splice(0)
+            return
+        }
+        arr.push(input.value)
+    }
+
+    let sentence = `${arr[0]} ${arr[1]} ${arr[2]} ${arr[3]} ${arr[4]}`
     span.textContent = sentence
 }
