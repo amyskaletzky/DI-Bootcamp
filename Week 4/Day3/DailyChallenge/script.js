@@ -42,4 +42,5 @@ function sortCarInventoryByYear(carInventory) {
     return sortYear
 }
 
-console.log(sortCarInventoryByYear(inventory))
+console.log(sortCarInventoryByYear([...inventory]))
+console.log(inventory)
