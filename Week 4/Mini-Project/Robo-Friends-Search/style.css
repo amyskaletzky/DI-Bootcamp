@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "SEGA";
+    src: url("SEGA.eot");
+    src: url("SEGA.woff") format("woff"),
+        url("SEGA.otf") format("opentype"),
+        url("SEGA.svg#filename") format("svg");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #6adf82;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+h1 {
+    letter-spacing: 0.25rem;
+    font-family: SEGA;
+}
+
+form {
+    flex: 1;
+    background-image: url('imgs/card-pattern.png');
+    /* display: flex; */
+}
+
+#filter-search {
+    padding: 0.5rem;
+    margin: 1rem 5rem;
+    width: 80%;
+}
+
+
+.container {
+    background-image: url('imgs/circuit-pattern.png');
+    background-color: #6f5bc6;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    padding: 2rem;
+    place-items: center;
+    text-align: center;
+    gap: 1rem;
+    /* autofill, autofit */
+}
+
+.card {
+    background-color: #4fc1c5;
+    background-image: url('imgs/card-pattern.png');
+    width: 13rem;
+    border-radius: 1rem;
+    /* padding: 3rem 2rem; */
+}
+
+.card>p {
+    text-align: left;
+    padding: 0.4rem;
+}
+
+.card>p:first-of-type {
+    font-weight: bold;
+    font-size: 1.4rem;
+    /* color: white; */
+}
+
+.card>p:last-of-type {
+    padding: 0.3rem 0.4rem 1rem 0.4rem;
+
+}
+
+img {
+    margin-top: 0.7rem;
+    border-radius: 50%;
+    width: 10rem;
+    background-color: #303952;
+}
+
+/* .modal {
+
+} */
+
+.hide {
+    display: none;
+}
