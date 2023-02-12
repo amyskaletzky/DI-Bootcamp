@@ -1,9 +1,6 @@
 @font-face {
-    font-family: "SEGA";
-    src: url("SEGA.eot");
-    src: url("SEGA.woff") format("woff"),
-        url("SEGA.otf") format("opentype"),
-        url("SEGA.svg#filename") format("svg");
+    font-family: 'sega';
+    src: url('font/SEGA.TTF');
 }
 
 * {
@@ -27,7 +24,8 @@ nav {
 
 h1 {
     letter-spacing: 0.25rem;
-    font-family: SEGA;
+    /* font-family: SEGA; */
+    font-family: 'sega';
 }
 
 form {

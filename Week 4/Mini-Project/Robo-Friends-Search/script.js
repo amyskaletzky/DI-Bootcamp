@@ -175,3 +175,6 @@ const input = document.getElementById('filter-search')
 input.addEventListener('input', newGame.filter)
 
 
+// Hi Adane, I just wanted to say that I did this with classes because
+// I wanted to practice classes, not because I thought it was the best way
+// Also ignore the modal, I wanted to add some stuff but I'll just do it in my free time
