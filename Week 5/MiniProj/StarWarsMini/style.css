@@ -40,8 +40,10 @@ button {
     font-size: 1.2rem;
 }
 
-
-div {}
+button:hover {
+    cursor: pointer;
+    background-color: #ffff00;
+}
 
 .title {
     font-size: 2rem;
