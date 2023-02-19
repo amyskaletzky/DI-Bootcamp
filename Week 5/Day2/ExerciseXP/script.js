@@ -28,9 +28,3 @@ xhr.onerror = function () {
     console.log("Request failed");
 };
 
-
-// Exercise 2 : Giphy API
-// Instructions
-// Using this part of the documention, retrieve 10 gifs about the “sun”. The starting position of the results should be 2.
-// Console.log the Javascript Object
-
