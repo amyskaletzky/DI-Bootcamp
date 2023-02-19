@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    background-color: lightcyan;
+    margin: 2rem 4rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form>* {
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+select {
+    width: 10rem;
+}
+
+div {
+    display: flex;
+    width: 20rem;
+}
+
+input {
+    padding: 0.5rem;
+    width: 15rem;
+    margin: 0.3rem;
+}
+
+button {
+    padding: 0.5rem;
+    width: 15rem;
+    margin: 0.3rem;
+}
+
+label {
+    font-size: 2rem;
+}
+
+#result {
+    border: 2px solid black;
+    border-radius: 3px;
+    width: 15rem;
+    background-color: #fff;
+    padding: 1rem;
+}
