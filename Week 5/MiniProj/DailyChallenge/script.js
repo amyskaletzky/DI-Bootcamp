@@ -59,7 +59,7 @@ function displayResult(res) {
     if (child) {
         child.remove()
     }
-    const text = document.createTextNode(res)
+    const text = document.createTextNode(res.toFixed(2))
 
     // appending the result to the resultContainer
     resultContainer.appendChild(text)
