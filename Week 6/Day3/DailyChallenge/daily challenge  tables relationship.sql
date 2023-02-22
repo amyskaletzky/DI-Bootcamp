@@ -15,6 +15,13 @@ CREATE TABLE customer_profile (
 SELECT * FROM customer
 SELECT * FROM customer_profile
 
+ALTER TABLE customer_profile
+ADD CONSTRAINT ondeleteonupdate
+FOREIGN KEY (id)
+REFERENCES customer (id)
+ON DELETE CASCADE ON UPDATE CASCADE
+
+
 INSERT INTO customer (first_name, last_name)
 VALUES ('John', 'Doe'),
 	   ('Jerome', 'Lalu'),
@@ -24,7 +31,6 @@ INSERT INTO customer_profile (isLoggedIn, customer_id)
 VALUES (TRUE, (SELECT id FROM customer WHERE first_name = 'John')),
 	   (FALSE, (SELECT id FROM customer WHERE first_name = 'Jerome'))
 
--- Instead of 
 
 
 -- Use the relevant types of Joins to display:
@@ -87,10 +93,18 @@ VALUES ('John', 12),
 CREATE TABLE library (
 	book_fk_id INTEGER REFERENCES book (book_id) ON DELETE CASCADE ON UPDATE CASCADE,
 	student_fk_id INTEGER REFERENCES student (student_id) ON DELETE CASCADE ON UPDATE CASCADE,
-	borrowed_date DATE NOT NULL --DEFAULT NOW() 
+	borrowed_date DATE NOT NULL --DEFAULT NOW(),
+	--PRIMARY KEY (book_fk_id, student_fk_id)
 )
 
 SELECT * FROM library
+
+ALTER TABLE library
+ADD CONSTRAINT keys PRIMARY KEY (book_fk_id, student_fk_id)
+
+ALTER TABLE library
+ALTER COLUMN borrowed_date SET DEFAULT NOW()
+
 
 
 -- Add 4 records in the junction table, use subqueries.
