@@ -23,7 +23,7 @@ xhr.onload = function () {
         console.log('object: ', xhr.response);
     }
 };
-
+    
 xhr.onerror = function () {
     console.log("Request failed");
 };

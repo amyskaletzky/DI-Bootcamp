@@ -8,9 +8,13 @@ fetch("https://www.swapi.tech/api/starships/9/")
 // Convert the promise above into async await:
 
 async function starWars() {
-    const response = await fetch("https://www.swapi.tech/api/starships/9/")
-    const objStarWars = await response.json()
-    console.log(objStarWars.result)
+    try {
+        const response = await fetch("https://www.swapi.tech/api/starships/9/")
+        const objStarWars = await response.json()
+        console.log(objStarWars.result)
+    } catch (err) {
+        console.log('error')
+    }
 }
 
 starWars()

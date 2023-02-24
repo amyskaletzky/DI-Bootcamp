@@ -35,11 +35,11 @@ SELECT film_id, title, description, length, rental_rate FROM film WHERE title IL
 
 
 -- Write a query which will find the 10 cheapest movies.
-SELECT film_id, title FROM film ORDER BY rental_rate ASC LIMIT 10
+SELECT film_id, title, rental_rate FROM film ORDER BY rental_rate ORDER BY title ASC LIMIT 10
 
 
 -- Not satisfied with the results. Write a query which will find the next 10 cheapest movies.
-SELECT film_id, title FROM film ORDER BY rental_rate ASC LIMIT 10 OFFSET 10
+SELECT film_id, title FROM film ORDER BY rental_rate ASC OFFSET 10 LIMIT 10 
 
 
 -- Write a query which will join the data in the customer table and the payment table. You want to get the first name and last name from the curstomer table, as well as the amount and the date of every payment made by a customer, ordered by their id (from 1 to…).

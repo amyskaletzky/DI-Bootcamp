@@ -54,9 +54,9 @@ const morse = `{
 // else return the morse javascript object(use resolve)
 
 function toJs() {
-    let jsObj = JSON.parse(morse)
     return new Promise(function (resolve, reject) {
-        if (jsObj === null) {
+        let jsObj = JSON.parse(morse)
+        if (Object.keys(jsObj).length === 0) {
             reject('ERROR, javaScript object is empty')
         } else {
             resolve(jsObj)
@@ -74,8 +74,8 @@ function toJs() {
 // if the user entered the word "¡Hola!", the promise rejects because the character "¡" doesn't exist in the morse javascript object
 
 function toMorse(morseJS) {
-    let userInput = prompt('Please enter a word or sentence').toLowerCase()
     return new Promise(function (resolve, reject) {
+        let userInput = prompt('Please enter a word or sentence').toLowerCase()
         userInput = userInput.replace(/\s/g, '');   // to remove spaces in case string is a sentence and not just a word
         let arr = userInput.split('')
         let availableChars = Object.keys(morseJS)
