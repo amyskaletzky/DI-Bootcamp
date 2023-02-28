@@ -3,9 +3,9 @@ const fs = require('fs')
 let count = 0
 let position = 0
 
-// Use the corresponding operations to calculate the final position 
+// Use the corresponding operations to calculate the final position
 // at the end of the file - The answer should be: 74 steps to the right.
-
+// PART ONE
 
 // fs.readFile('RightLeft.txt', 'utf-8', (err, data) => {
 //     if (err) return console.log(err)
@@ -28,8 +28,10 @@ let position = 0
 
 
 
-// Use the corresponding operations to calculate the number of steps needed 
+// Use the corresponding operations to calculate the number of steps needed
 // to hit position the - 1 for the first time - The answer should be: 1795 steps.
+// PART TWO
+
 fs.readFile('RightLeft.txt', 'utf-8', (err, data) => {
     const dataArray = (data.split(''))
     for (let i = 0; i < dataArray.length; i++) {
