@@ -1,5 +1,6 @@
 import './App.css';
 import MovieList from './components/MovieList';
+import './style.css'
 
 function App() {
   return (
