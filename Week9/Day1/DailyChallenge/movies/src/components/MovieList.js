@@ -6,7 +6,7 @@ const MovieList = (props) => {
 
     return (
         <>
-            <section id='movie-list'>
+            <section id='movie-list' style={{ display: 'inline-block', width: '50%' }}>
                 <h1>Movie List</h1>
                 {props.movies.map((movie, index) => {
                     return (
@@ -21,7 +21,7 @@ const MovieList = (props) => {
 
             </section>
 
-            <section id='movie-details'>
+            <section id='movie-details' style={{ display: 'inline-block', width: '50%' }}>
                 <MovieDetails />
             </section>
         </>

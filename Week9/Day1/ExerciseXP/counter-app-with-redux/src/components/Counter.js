@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { increaseCount, decreaseCount } from '../actions'
-
+    
 const Counter = (props) => {
     return (
         <>
